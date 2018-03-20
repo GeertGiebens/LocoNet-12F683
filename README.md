@@ -20,3 +20,6 @@ What you need to know about this device:
 
 - The PCB can easily be reproduced yourself. As an example see photos:
 
+
+Other project:
+-https://github.com/GeertGiebens/LocoNet_IO 
