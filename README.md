@@ -8,7 +8,7 @@ The hardware and software can only listen to LocoNet data.  This means that thi
 
 We can then greatly simplify the device. A small PIC µC is sufficient. We also use the internal comparator of the µC. A PIC 12F683 µC, some resistors,  capacitor and connectors is all you need. See figure:
 
- 
+<img alt="open opps 1" src=https://github.com/GeertGiebens/LocoNet-12F683/blob/master/LocoNet%20OUT%20with%20PIC%2012F683%20%C2%B5C.png>
 
  
 
