@@ -12,7 +12,7 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 
  
 
-#### What you need to know about this device:
+### What you need to know about this device:
 
 - You can program a new address by temporarily placing a bridge at the specified location, and send the opcode with a new address.
 
