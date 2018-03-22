@@ -25,25 +25,21 @@ What you need to know about this device:
 
 How does the device react to the LocoNet opcode OPC_SW_REQ :
 
-OPC_SW_REQ :OPCODE: REQ SWITCH function: <0xB0>,<SW1>,<SW2>,<CHK>
-- <SW1> =<0,A6,A5,A4- A3,A2,A1,A0>
-- <SW2> =<0,0,DIR,ON- A10,A9,A8,A7
+OPC_SW_REQ :OPCODE: REQ SWITCH function: 0xB0,SW1,SW2,CHK
+- SW1 =0,A6,A5,A4- A3,A2,A1,A0
+- SW2 =0,0,DIR,ON- A10,A9,A8,A7
 - where ON='1'  for Output ON, ='0' FOR output OFF
 - where DIR='1' for Closed,/GREEN, ='0' for Thrown/RED
                          
                                                                            
-SW2:DIR='1' AND ON='1' --> OUT1= GND
+SW2: DIR='1' AND ON='1' --> OUT1= GND
+SW2: DIR='0' AND ON='1' --> OUT1= +5V
 
-SW2:DIR='0' AND ON='1' --> OUT1= +5V
 
-
-SW2:DIR='1' AND ON='1' --> OUT2= GND (active)  if option: OUTPUT_OFF_260ms='1' then OUT2 --> +5V after 260ms
-
-SW2:DIR='1' AND ON='0' --> OUT2= +5V
-
-SW2:DIR='0' AND ON='1' --> OUT3= GND (active)  if option: OUTPUT_OFF_260ms='1' then OUT3 --> +5V after 260ms
-
-SW2:DIR='0' AND ON='0' --> OUT3= +5V
+SW2: DIR='1' AND ON='1' --> OUT2= GND (active)  if option: OUTPUT_OFF_260ms='1' then OUT2 --> +5V after 260ms
+SW2: DIR='1' AND ON='0' --> OUT2= +5V
+SW2: DIR='0' AND ON='1' --> OUT3= GND (active)  if option: OUTPUT_OFF_260ms='1' then OUT3 --> +5V after 260ms
+SW2: DIR='0' AND ON='0' --> OUT3= +5V
 
 
 
