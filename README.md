@@ -30,7 +30,6 @@ OPC_SW_REQ :OPCODE: REQ SWITCH function: 0xB0,SW1,SW2,CHK
 - SW2 =0,0,DIR,ON- A10,A9,A8,A7
 - where ON='1'  for Output ON, ='0' FOR output OFF
 - where DIR='1' for Closed,/GREEN, ='0' for Thrown/RED
-                         
          
  Device outputs OUT1, OUT2 and OUT3:
  
