@@ -12,7 +12,7 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 
  
 
-What you need to know about this device:
+#### What you need to know about this device:
 
 - You can program a new address by temporarily placing a bridge at the specified location, and send the opcode with a new address.
 
@@ -23,7 +23,7 @@ What you need to know about this device:
 - Important to know! There is a choice between how outputs  OUT2 and OUT3 react. Each output will be switched off by the corresponding LocoNet opcode (SW2:DIR=’1’or’0’ and ON=’0’). But there is a possibility that the device itself switches off the output after a time = 260ms. You can set this in the following way: If you set a new address, the device will look at the last received opcode before you removing the programming bridge. Is in opcode SW2:ON='1' then the device itself will switch off the output. This is for personal reasons (some devices do not send an opcode where SW2:ON=’0’). Actually, it is safer to use this option, because if the opcode for switching off does not arrive, the output will not switch off!
 
 
-How does the device react to the LocoNet opcode OPC_SW_REQ :
+### How does the device react to the LocoNet opcode OPC_SW_REQ :
 
 OPC_SW_REQ :OPCODE: REQ SWITCH function: 0xB0,SW1,SW2,CHK
 - SW1 =0,A6,A5,A4- A3,A2,A1,A0
@@ -46,6 +46,6 @@ OPC_SW_REQ :OPCODE: REQ SWITCH function: 0xB0,SW1,SW2,CHK
 
 
 
-Other projects:
+### Other projects:
 
 -[LocoNet IO](https://github.com/GeertGiebens/LocoNet_IO) (Under construction)
