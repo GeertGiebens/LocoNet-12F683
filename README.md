@@ -4,7 +4,7 @@
 
 !!! My native language is not English. I hope I made the explanation how it work clear enough. !!!
 
-This device is a simple LocoNet receiver. It responds to one LocoNet address by opcode OPC_SW_REQ.  This device has three outputs. With two outputs you can control a relais board to switch turnouts. With one output you can switch a LED (or two LED’s). Other applications are also possible.
+This device is a simple LocoNet receiver. It responds to one LocoNet address by opcode OPC_SW_REQ.  This device has three outputs. With two outputs you can control a relay board to switch turnouts. With one output you can switch a LED (or two LED’s). Other applications are also possible.
 
 The hardware and software can only listen to LocoNet data.  This means that this device can not report anything on the net. In principle, this is not necessary, if the job is always executed.
 
