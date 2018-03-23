@@ -20,9 +20,9 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 
 - The device stores every change in the EEPROM. If the power supply is switched on the LED output assume the last position.
 
-- The PCB can easily be reproduced yourself. As an example see photos:
+- Important to know! There is a choice between how outputs  OUT2 and OUT3 react. Each output will be switched off by the corresponding LocoNet opcode (OPC_SW_REQ with SW2:DIR=’1’or’0’ and ON=’0’). But there is a possibility that the device itself switches off the output after a time = 260ms. You can set this option in the following way: If you program a new address, the device will look at the last received opcode before you removing the programming bridge. If in this opcode SW2:ON='1' then the device itself will switch off the output. This is for personal reasons, some of my devices do not send an opcode where SW2:ON=’0’ (for example toggle switches). Actually, it is safer to use this option, because if the opcode for switching off does not arrive, the output will not switch off!
 
-- Important to know! There is a choice between how outputs  OUT2 and OUT3 react. Each output will be switched off by the corresponding LocoNet opcode (SW2:DIR=’1’or’0’ and ON=’0’). But there is a possibility that the device itself switches off the output after a time = 260ms. You can set this in the following way: If you set a new address, the device will look at the last received opcode before you removing the programming bridge. Is in opcode SW2:ON='1' then the device itself will switch off the output. This is for personal reasons (some devices do not send an opcode where SW2:ON=’0’). Actually, it is safer to use this option, because if the opcode for switching off does not arrive, the output will not switch off!
+- The PCB can easily be reproduced yourself. As an example see photos:
 
 
 ### How does the device react to the LocoNet opcode OPC_SW_REQ :
@@ -30,6 +30,7 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 OPC_SW_REQ :OPCODE: REQ SWITCH function: 0xB0,SW1,SW2,CHK
 - SW1 =0,A6,A5,A4- A3,A2,A1,A0
 - SW2 =0,0,DIR,ON- A10,A9,A8,A7
+- where A0...A10 address 0-2047
 - where ON='1'  for Output ON, ='0' FOR output OFF.
 - where DIR='1' for Closed,/GREEN, ='0' for Thrown/RED.
          
