@@ -6,7 +6,7 @@
 
 This device is a simple LocoNet receiver. It responds to one LocoNet address by opcode OPC_SW_REQ.  This device has three outputs. With two outputs you can control a relay board to switch turnouts. With one output you can switch a LED (or two LED’s). Other applications are also possible.
 
-The hardware and software can only listen to LocoNet data.  This means that this device can not report anything on the net. In principle, this is not necessary, if the job is always executed.
+The hardware and software can only listen to LocoNet data.  This means that this device can not report anything on the net. In principle, this is not necessary, because the task is always executed.
 
 We can then greatly simplify the device. A small PIC µC is sufficient. We also use the internal comparator of the µC. A PIC 12F683 µC, some resistors,  capacitor and connectors is all you need. See figure:
 
