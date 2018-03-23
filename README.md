@@ -28,8 +28,8 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 ### How does the device react to the LocoNet opcode OPC_SW_REQ :
 
 Content of OPC_SW_REQ: OPCODE REQ SWITCH function: 0xB0,SW1,SW2,CHK
-- SW1 =0,A6,A5,A4- A3,A2,A1,A0
-- SW2 =0,0,DIR,ON- A10,A9,A8,A7
+- SW1 BYTE= 0,A6,A5,A4- A3,A2,A1,A0
+- SW2 BYTE= 0,0,DIR,ON- A10,A9,A8,A7
 - where A0...A10 address 0-2047
 - where ON='1'  for Output ON, ='0' FOR output OFF.
 - where DIR='1' for Closed,/GREEN, ='0' for Thrown/RED.
