@@ -24,6 +24,8 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 
 - The PCB can easily be reproduced yourself. As an example see photos:
 
+<img alt="open opps 1" src=https://github.com/GeertGiebens/LocoNet-12F683/blob/master/strokenprintje%20LocoNet%2012F683.png>
+
 
 ### How does the device react to the LocoNet opcode OPC_SW_REQ :
 
