@@ -49,7 +49,7 @@ Content of OPC_SW_REQ: OPCODE REQ SWITCH function: 0xB0,SW1,SW2,CHK
 - SW2: DIR='0' AND ON='0' --> OUT3= +5V
 
 
-
+Test movie: url=https://youtu.be/2NxG9pk9huw 
 
 ### Other projects:
 
