@@ -2,8 +2,6 @@
 
 (Under construction 22/mrt/2018)
 
-<img alt="open opps 1" src=https://github.com/GeertGiebens/LocoNet-or-DCC-Input-Output-Device-with-16-ports/blob/master/LocoNet%20(DCC)%20Output%20Device.png>
-
 !!! My native language is not English. I hope I made the explanation how it work clear enough. !!!
 
 This device is a simple LocoNet receiver. It responds to one LocoNet address by opcode OPC_SW_REQ.  This device has three outputs. With two outputs you can control a relay board to switch turnouts. With one output you can switch a LED (or two LED’s). Other applications are also possible.
