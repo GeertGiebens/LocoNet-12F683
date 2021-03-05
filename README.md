@@ -51,6 +51,8 @@ Content of OPC_SW_REQ: OPCODE REQ SWITCH function: 0xB0,SW1,SW2,CHK
 
 Test movie: https://youtu.be/2NxG9pk9huw 
 
+<img alt="open opps 1" src=https://github.com/GeertGiebens/LocoNet_16_ports/blob/master/LocoNet%20(DCC)%20Output%20Device.png>
+
 ### Other projects:
 
 -[LocoNet IO](https://github.com/GeertGiebens/LocoNet_IO) (Under construction)
