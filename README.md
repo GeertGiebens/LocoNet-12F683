@@ -12,8 +12,6 @@ We can then greatly simplify the device. A small PIC µC is sufficient. We also 
 
 <img alt="open opps 1" src=https://github.com/GeertGiebens/LocoNet-12F683/blob/master/LocoNet%20OUT%20with%20PIC%2012F683%20%C2%B5C.png>
 
-<img alt="open opps 1" src=https://github.com/GeertGiebens/DIY_LocoNet_S88_DCC/blob/master/LOCONET%20IN-OUT.png>
-
  
 
 ### What you need to know about this device:
@@ -54,6 +52,3 @@ Content of OPC_SW_REQ: OPCODE REQ SWITCH function: 0xB0,SW1,SW2,CHK
 Test movie: https://youtu.be/2NxG9pk9huw 
 
 
-### Other projects:
-
--[LocoNet IO](https://github.com/GeertGiebens/LocoNet_IO) (Under construction)
